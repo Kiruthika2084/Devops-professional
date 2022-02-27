@@ -8,13 +8,16 @@
 ### 'AWS-managed policies'
 ---
 
-#### AWSCodeCommitFullAccess – Grants full access to CodeCommit. 
+#### AWSCodeCommitFullAccess 
+– Grants full access to CodeCommit. 
 
-#### AWSCodeCommitPowerUser – Allows users access to all of the functionality of CodeCommit and repository-related resources,
+#### AWSCodeCommitPowerUser 
+– Allows users access to all of the functionality of CodeCommit and repository-related resources,
 except it does not allow them to delete CodeCommit repositories or create or delete repository-related resources in other AWS services,
 such as Amazon CloudWatch Events. It is recommended to apply this policy to most users.
 
-#### AWSCodeCommitReadOnly – Grants read-only access to CodeCommit and repository-related resources in other AWS services.
+#### AWSCodeCommitReadOnly 
+– Grants read-only access to CodeCommit and repository-related resources in other AWS services.
 
 
 We cannot modify AWS-managed policies. In order to customize, we can add a Deny rule to block some capabilities included in these policies.
