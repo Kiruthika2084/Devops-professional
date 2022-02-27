@@ -10,4 +10,4 @@
 
 ### AWS-HealthDashboard
 ---
-- 
+- The service delivers alerts and notifications triggered by the changes in health of AWS resources
