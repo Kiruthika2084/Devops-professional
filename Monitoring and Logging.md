@@ -1,6 +1,6 @@
 ## Table of contents
 ---
-  * [Cloudwatch Logs](#Cloudwatch)
+  * [Cloudwatch Logs](#Cloudwatch Logs)
 
 
 ### Cloudwatch-Logs Subscription
