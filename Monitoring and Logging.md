@@ -1,9 +1,9 @@
 ## Table of contents
 ---
-  * [Cloudwatch-Logs Subscription](#Cloudwatch-Logs Subscription)
+  * [Cloudwatch-Logs Subscription](#Cloudwatch-LogsSubscription)
   * [AWS-HealthDashboard](#AWS-healthdashboard)
   
-### Cloudwatch-Logs Subscription
+### Cloudwatch-LogsSubscription
 ---
 - Use Subscription for realtime feed of log events from cloudwatch logs.
 - Can use Subsciption filter with Lambda, Kinesis and Kinesis Data Firehose.
