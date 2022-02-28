@@ -5,7 +5,7 @@
 * [AutoScalingGroup-UpdatePolicy](#ASG-UpdatePolicy)
 
 
-### 'AWS-managed policies'
+### 'AWSmanaged-policies'
 ---
 
 #### AWSCodeCommitFullAccess 
