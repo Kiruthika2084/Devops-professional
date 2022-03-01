@@ -11,7 +11,10 @@
 
 #### AWS-Config
 ---
-- The service delivers ale
+- Provides Visual Dahsboard to quickly spot non-complaint resources and take appropriate action.
+- Notifies whenever resources are created, modified or deleted .
+- AWS config rules can be used to evaluate the configuration settings of AWS resources.
+- When AWS Config detects that a resource violates the conditions in one of your rules, AWS Config flags the resource as noncompliant and sends a notification.
 
 #### HealthDashboard
 ---
