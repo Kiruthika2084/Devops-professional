@@ -4,7 +4,7 @@
 * [Cloud-watch metrics<->CodeDeploy deployment group](#cloudwatch-metrics-codedeploy)
 * [AWS-systems Manager](#AWS-systems-manager)
 * [Cloud-Formation](#Cloud-Formation)
-* [ECS<->SecretsManager](#ECS<->SecretsManager)
+* [ECS<->Secrets](#ECS<->Secrets)
 
 
 #### cloudwatch-metrics<->CodeDeploy deployment group
@@ -32,8 +32,12 @@
 - Use seperate stacks to create related AWS resources
 - ![image](https://user-images.githubusercontent.com/81581601/156093802-0ff739f1-3715-4f2a-929a-46aa16b3539d.png)
 
-#### ECS<->SecretsManager
+#### ECS<->Secrets
  ---
- 
+- ECS enables to inject sensitive data in container either by storing in Secrets manager or parameter store, and then referencing them in container definition.
+- In container definition, specify **secrets** with the name of environment variable and full ARN of the secret parameter.
+- The parameter referenced can be in the different region, but same account.
+- Secrets Manager - dedicated secrets store with lifecycle management
+- parameter Store - Single store for configuration and secrets.
  
  
