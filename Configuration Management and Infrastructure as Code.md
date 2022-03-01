@@ -6,6 +6,7 @@
 * [Cloud-Formation](#Cloud-Formation)
 * [ECS<->Secrets](#ECS-Secrets)
 * [AWS-Config](#AWS-Config)
+* [VPC-endpoint](#VPC-endpoint)
 
 
 #### cloudwatch-metrics<->CodeDeploy deployment group
@@ -42,3 +43,10 @@
 - parameter Store - Single store for configuration and secrets.
  
  #### AWS-Config
+ ---
+ 
+ #### VPC-endpoint
+ ---
+ - VPC endpoint enables to privately connect AWS resources and VPC endpoint services.
+ - Types of endpoints: Interface endpoints and gateway endpoints(S3 & dynamoDB) 
+  
