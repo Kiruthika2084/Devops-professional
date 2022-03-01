@@ -19,7 +19,7 @@
 - If any of the alarms are activated, the deployment stops and the status is updated to stopped. 
   To use this option, grant Cloudwatch permissions to your codedeploy service role.
 
-#### AWS Systems manager
+#### AWS-Systems-manager
 ---
 - **Run command**- Remotely and securely manage the configuration of managed instances(machine in hybrid environment configured for systems manager)
 - can use run command from console,cli, tool for powershell, sdk at no additional cost
@@ -33,6 +33,7 @@
 - Stacks can use the exported resources by calling them using Fn:ImportValue function
 - Use seperate stacks to create related AWS resources
 - ![image](https://user-images.githubusercontent.com/81581601/156093802-0ff739f1-3715-4f2a-929a-46aa16b3539d.png)
+##### custom-resource
 
 #### ECS<->Secrets
  ---
