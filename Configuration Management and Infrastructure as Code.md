@@ -33,7 +33,13 @@
 - Stacks can use the exported resources by calling them using Fn:ImportValue function
 - Use seperate stacks to create related AWS resources
 - ![image](https://user-images.githubusercontent.com/81581601/156093802-0ff739f1-3715-4f2a-929a-46aa16b3539d.png)
+
 ##### custom-resource
+---
+- Include resources that are not cloudformation resource types, using custom-resource. Write custom provisioning logic in templates that AWS cloudformation runs anytime you update,create or delete stacks.
+- 
+
+
 
 #### ECS<->Secrets
  ---
