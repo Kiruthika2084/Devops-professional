@@ -64,7 +64,7 @@ The AutoScalingRollingUpdate policy supports the following configuration options
 **If both the AutoScalingReplacingUpdate and AutoScalingRollingUpdate policies are specified, setting the WillReplace property to true gives AutoScalingReplacingUpdate precedence. But since this property is set to false, then the AutoScalingRollingUpdate policy will take precedence instead.**
 
 
-### CloudFormation - Lifecyclehooks 
+### CloudFormation-Lifecyclehooks 
 ---
 -Lifecycle hooks enables you to perform custom actions by pausing the instance as an auto scaling group launches or terminates them
 -When an instance is paused, it stays in the wait state until you complete the Lifecycle using CompleteLifeAction command or CompleteLifeAction operation or timeout period ends(default is one hour)
