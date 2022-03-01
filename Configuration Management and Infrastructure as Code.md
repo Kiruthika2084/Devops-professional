@@ -4,6 +4,7 @@
 * [Cloud-watch metrics<->CodeDeploy deployment group](#cloudwatch-metrics-codedeploy)
 * [AWS-systems Manager](#AWS-systems-manager)
 * [Cloud-Formation](#Cloud-Formation)
+* [ECS<->SecretsManager](#ECS<->SecretsManager)
 
 
 #### cloudwatch-metrics<->CodeDeploy deployment group
@@ -30,4 +31,9 @@
 - Stacks can use the exported resources by calling them using Fn:ImportValue function
 - Use seperate stacks to create related AWS resources
 - ![image](https://user-images.githubusercontent.com/81581601/156093802-0ff739f1-3715-4f2a-929a-46aa16b3539d.png)
+
+#### ECS<->SecretsManager
+ ---
+ 
+ 
  
