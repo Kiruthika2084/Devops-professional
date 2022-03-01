@@ -3,6 +3,8 @@
 ---
 * [Cloud-watch metrics<->CodeDeploy deployment group](#cloudwatch-metrics-codedeploy)
 * [AWS-systems Manager](#AWS-systems-manager)
+* [Cloud-Formation](#Cloud-Formation)
+
 
 #### cloudwatch-metrics<->CodeDeploy deployment group
 ---
@@ -20,3 +22,12 @@
 - can use run command from console,cli, tool for powershell, sdk at no additional cost
 - Administrators use run command for bootstrap,build deployment pipeline,configure log files, join instances to windows domain etc
 - **parameter store** -store data such as passwords, licence codes, database strings as parameter values
+
+
+#### Cloud-Formation
+---
+- Cross stack references to export resources from one stack to another
+- Stacks can use the exported resources by calling them using Fn:ImportValue function
+- Use seperate stacks to create related AWS resources
+- ![image](https://user-images.githubusercontent.com/81581601/156093802-0ff739f1-3715-4f2a-929a-46aa16b3539d.png)
+ 
