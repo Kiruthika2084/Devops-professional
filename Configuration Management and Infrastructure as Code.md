@@ -5,6 +5,7 @@
 * [AWS-systems Manager](#AWS-systems-manager)
 * [Cloud-Formation](#Cloud-Formation)
 * [ECS<->Secrets](#ECS-Secrets)
+* [AWS-Config](#AWS-Config)
 
 
 #### cloudwatch-metrics<->CodeDeploy deployment group
@@ -40,4 +41,4 @@
 - Secrets Manager - dedicated secrets store with lifecycle management
 - parameter Store - Single store for configuration and secrets.
  
- 
+ #### AWS-Config
