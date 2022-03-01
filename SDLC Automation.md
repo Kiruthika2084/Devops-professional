@@ -69,6 +69,6 @@ The AutoScalingRollingUpdate policy supports the following configuration options
 -Lifecycle hooks enables you to perform custom actions by pausing the instance as an auto scaling group launches or terminates them
 -When an instance is paused, it stays in the wait state until you complete the Lifecycle using CompleteLifeAction command or CompleteLifeAction operation or timeout period ends(default is one hour)
 
-EC2-Instance-Launching
-EC2-Instance-Terminating
+-EC2-Instance-Launching - install or configure software, before launching, in wait state
+-EC2-Instance-Terminating - download logs or other data, before terminating, in wait state
 
