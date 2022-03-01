@@ -4,6 +4,7 @@
 * [AWS-managed-policies](#awsmanaged-policies)
 * [AutoScalingGroup-UpdatePolicy](#ASG-UpdatePolicy)
 * [CloudFormation-Lifecycle hooks](#CloudFormation-Lifecyclehooks)
+* [AWS-CodePipeline](#AWS-CodePipeline)
 
 
 ### 'AWSmanaged-policies'
@@ -71,4 +72,15 @@ The AutoScalingRollingUpdate policy supports the following configuration options
 
 - EC2-Instance-Launching - install or configure software, before launching, in wait state
 - EC2-Instance-Terminating - download logs or other data, before terminating, in wait state
+
+### AWS-CodePipeline
+---
+-  includes a number of actions that help you configure build, test, and deploy resources for your automated release process.
+-  can use the console, AWS CLI, or AWS CloudFormation to add cross-region actions in pipelines.
+-  When AWS provider is the provider for an action and this actiontype/provider type are in different region from your pipelne, then called cross-region action.
+-  If you use console to create pipeline, default artifact buckets are configured in the same region
+-  If CloudFormation, CLI, SDK are used, provide artifact bucket for each region you have actions.
+-  must create the artifact bucket and encryption key in the same AWS Region as the cross-region action and in the same account as your pipeline.
+-  cannot create cross-region actions for the following action types: source actions, third-party actions, and custom actions. 
+
 
