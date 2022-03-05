@@ -61,5 +61,16 @@
  - VPC endpoint enables to privately connect AWS resources and VPC endpoint services.
  - Types of endpoints: Interface endpoints and gateway endpoints(S3 & dynamoDB) 
  
- #### Deployment Lifecycle event.
+ #### Appspec-hooks
+ 
+ - The content in the 'hooks' section of the AppSpec file varies, depending on the compute platform for your deployment.
+ - The 'hooks' section for an EC2/On-Premises deployment contains mappings that link deployment lifecycle event hooks to one or more scripts. 
+ - he 'hooks' section for a Lambda or an Amazon ECS deployment specifies Lambda validation functions to run during a deployment lifecycle event. 
+ - If an event hook is not present, no operation is executed for that event.
+ - During each deployment lifecycle event, hook scripts can access the following environment variables:
+   *  APPLICATION_NAME – The name of the application in CodeDeploy that is part of the current deployment (for example, WordPress_App).
+   *  DEPLOYMENT_ID – The ID CodeDeploy has assigned to the current deployment (for example, d-AB1CDEF23). 
+   *  DEPLOYMENT_GROUP_NAME – The name of the deployment group in CodeDeploy that is part of the current deployment (for example, WordPress_DepGroup).
+   *  DEPLOYMENT_GROUP_ID – The ID of the deployment group in CodeDeploy that is part of the current deployment
+   *  LIFECYCLE_EVENT – The name of the current deployment lifecycle event (for example, AfterInstall).
   
