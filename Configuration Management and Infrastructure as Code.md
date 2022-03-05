@@ -68,9 +68,9 @@
  - he 'hooks' section for a Lambda or an Amazon ECS deployment specifies Lambda validation functions to run during a deployment lifecycle event. 
  - If an event hook is not present, no operation is executed for that event.
  - During each deployment lifecycle event, hook scripts can access the following environment variables:
-   *  APPLICATION_NAME – The name of the application in CodeDeploy that is part of the current deployment (for example, WordPress_App).
-   *  DEPLOYMENT_ID – The ID CodeDeploy has assigned to the current deployment (for example, d-AB1CDEF23). 
-   *  DEPLOYMENT_GROUP_NAME – The name of the deployment group in CodeDeploy that is part of the current deployment (for example, WordPress_DepGroup).
-   *  DEPLOYMENT_GROUP_ID – The ID of the deployment group in CodeDeploy that is part of the current deployment
-   *  LIFECYCLE_EVENT – The name of the current deployment lifecycle event (for example, AfterInstall).
+   *  APPLICATION_NAME
+   *  DEPLOYMENT_ID 
+   *  DEPLOYMENT_GROUP_NAME 
+   *  DEPLOYMENT_GROUP_ID
+   *  LIFECYCLE_EVENT
   
