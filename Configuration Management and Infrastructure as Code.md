@@ -8,6 +8,7 @@
 * [AWS-Config](#AWS-Config)
 * [VPC-endpoint](#VPC-endpoint)
 * [Appspec-hooks](#Appspec-hooks)
+* [codeDeploy-deploymentstrategies](#codeDeploy-deploymentstrategies)
 
  
 #### cloudwatch-metrics<->CodeDeploy deployment group
@@ -84,3 +85,14 @@
    *  DEPLOYMENT_GROUP_ID
    *  LIFECYCLE_EVENT
   - These environment variables are local to each deployment lifecycle event.
+
+ 
+#### codeDeploy-deploymentstrategies
+ -----
+ 
+ - When you deploy to an AWS Lambda compute platform, There are three ways traffic can shift during a deployment:
+   * Canary : Traffic is shifted in two increments
+   * Linear :Traffic is shifted in equal increments with an equal number of minutes between each increment.
+   * All-at-once : All traffic is shifted from the original Lambda function to the updated Lambda function version all at once.
+ 
+ 
