@@ -28,6 +28,7 @@
 - Provides information about the regional availability of the service and not specific to AWS accounts, so not published to cloudwatch events.AWS-TrustedAdvisor
 
 #### AWS-TrustedAdvisor
+---
 
 -  Trusted Advisor inspects your AWS environment, and then makes recommendations when opportunities exist to save money, improve system availability and performance, or help close security gaps. 
 -  All AWS customers have access to *five* Trusted Advisor checks. 
