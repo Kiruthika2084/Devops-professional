@@ -96,4 +96,10 @@
    * Linear :Traffic is shifted in equal increments with an equal number of minutes between each increment.
    * All-at-once : All traffic is shifted from the original Lambda function to the updated Lambda function version all at once.
  
+ #### ASG-ScheduledAction
+ ----
+ 
+ - To configure your Auto Scaling group to scale based on a schedule, you create a scheduled action.
+ - At the specified time, Amazon EC2 Auto Scaling updates the group with the values for minimum, maximum, and desired size specified by the scaling action.
+ - can create scheduled actions for scaling one time only or for scaling on a recurring schedule.
  
