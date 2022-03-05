@@ -56,6 +56,14 @@
  
  #### AWS-Config
  ---
+ - AWS Config provides a detailed view of the configuration of AWS resources in your AWS account. 
+ - how the resources are related to one another and how they were configured in the past to see how the configurations and relationships change over time.
+ - AWS Config evaluates your resource configurations against the rule when the trigger occurs.
+ - There are two types of triggers:
+   *Configuration changes
+   *Periodic
+
+ 
  
  #### VPC-endpoint
  ---
