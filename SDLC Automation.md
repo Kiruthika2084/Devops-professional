@@ -1,12 +1,21 @@
 ---
 ## Table of contents
 ---
+* [CodeCommit](#CodeCommit)
 * [AWS-managed-policies](#awsmanaged-policies)
 * [AutoScalingGroup-UpdatePolicy](#ASG-UpdatePolicy)
 * [CloudFormation-Lifecycle hooks](#CloudFormation-Lifecyclehooks)
 * [AWS-CodePipeline](#AWS-CodePipeline)
 * [Lifecycle-Hook](#Lifecycle-Hook)
 
+
+### CodeCommit
+---
+
+- A repository is the fundamental version control object in CodeCommit. 
+- If you add AWS tags to repositories, you can set up notifications so that repository users receive email about events (for ex, another user commenting on code).
+- You can create triggers for your repository so that code pushes or other events trigger actions, such as emails or code functions. 
+- You can even configure a repository on your local computer (a local repo) to push your changes to more than one repository.
 
 ### 'AWSmanaged-policies'
 ---
