@@ -36,9 +36,13 @@
 
 ##### custom-resource
 ---
-- Include resources that are not cloudformation resource types, using custom-resource. Write custom provisioning logic in templates that AWS cloudformation runs anytime you update,create or delete stacks.
-- 
-
+- Include resources that are not cloudformation resource types, using custom-resource. Write custom provisioning logic in templates that AWS cloudformation runs anytime you update,create or delete stacks.This way we can manage all related resources in a single stack.
+- Use the AWS::CloudFormation::CustomResource or alternatively, the Custom::<User-Defined Resource Name> resource type to define custome resources in templates
+- custom resources require one property ,service token which specifies where CF sends requests, such as SNS
+- Associating Lambda with custome resources, the functions is invoked whenever custom resource is created, modified or deleted. CF calls Lambda API and pass request data to the function.
+- The power and customizability of Lambda functions in combination with AWS CloudFormation enable a wide range of scenarios, such as dynamically looking up AMI IDs during stack creation, or implementing and using utility functions, such as string reversal functions.
+- Normally, you might map AMI IDs to specific instance types and regions. To update the IDs, you manually change them in each of your templates. By using custom resources and AWS Lambda (Lambda), you can create a function that gets the IDs of the latest AMIs for the region and instance type that you’re using so that you don’t have to maintain mappings.
+- cfn-init helper script is primarily used to fetch metadata, install packages and start/stop services to your EC2 instances that are already running. 
 
 
 #### ECS<->Secrets
@@ -56,4 +60,6 @@
  ---
  - VPC endpoint enables to privately connect AWS resources and VPC endpoint services.
  - Types of endpoints: Interface endpoints and gateway endpoints(S3 & dynamoDB) 
+ 
+ #### Deployment Lifecycle event.
   
