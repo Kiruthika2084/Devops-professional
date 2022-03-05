@@ -36,3 +36,14 @@
 - In API gateway, create a canary deployment with canary settings in deployment creation operation.
 - Create canary release deployment from non-canary release deployment by making a stage:update request.
 - non-existing stage name can be used for non-canary release deployment, but not in canary-deployment(throws error)
+
+### Canary-deployment
+---
+-To properly implement the canary deployment, you should do the following steps:
+
+ *Use a router or load balancer that allows you to send a small percentage of users to the new version.
+ *Use a dimension on your KPIs to indicate which version is reporting the metrics.
+ *Use the metric to measure the success of the deployment; this indicates whether the deployment should continue or rollback.
+ *Increase the load on the new version until either all users are on the new version or you have fully rolled back.
+
+ 
