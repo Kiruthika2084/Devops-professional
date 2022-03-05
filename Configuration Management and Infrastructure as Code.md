@@ -7,6 +7,7 @@
 * [ECS<->Secrets](#ECS-Secrets)
 * [AWS-Config](#AWS-Config)
 * [VPC-endpoint](#VPC-endpoint)
+* [Appspec-hooks](#Appspec-hooks)
 
  
 #### cloudwatch-metrics<->CodeDeploy deployment group
@@ -62,6 +63,7 @@
  - Types of endpoints: Interface endpoints and gateway endpoints(S3 & dynamoDB) 
  
  #### Appspec-hooks
+ ----
  
  - The content in the 'hooks' section of the AppSpec file varies, depending on the compute platform for your deployment.
  - The 'hooks' section for an EC2/On-Premises deployment contains mappings that link deployment lifecycle event hooks to one or more scripts. 
@@ -73,4 +75,4 @@
    *  DEPLOYMENT_GROUP_NAME 
    *  DEPLOYMENT_GROUP_ID
    *  LIFECYCLE_EVENT
-  
+  - These environment variables are local to each deployment lifecycle event.
