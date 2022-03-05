@@ -3,6 +3,7 @@
   * [Cloudwatch-Logs Subscription](#Cloudwatch-LogsSubscription)
   * [AWS-Config](#AWS-Config)
   * [HealthDashboard](#Healthdashboard)
+  * [AWS-TrustedAdvisor](#AWS-TrustedAdvisor)
   
 #### Cloudwatch-LogsSubscription
 ---
@@ -24,4 +25,14 @@
 - AWS cloudwatch events can be used to detect and react to changes in PHD events. Only those specific to AWS account and resources.
 
 ##### Service-HealthDashboard
-- Provides information about the regional availability of the service and not specific to AWS accounts, so not published to cloudwatch events.
+- Provides information about the regional availability of the service and not specific to AWS accounts, so not published to cloudwatch events.AWS-TrustedAdvisor
+
+#### AWS-TrustedAdvisor
+
+-  Trusted Advisor inspects your AWS environment, and then makes recommendations when opportunities exist to save money, improve system availability and performance, or help close security gaps. 
+-  All AWS customers have access to *five* Trusted Advisor checks. 
+-  Customers with a Business or Enterprise support plan can view all Trusted Advisor checks.
+-  Can use *Amazon CloudWatch Events* to detect and react to changes in the status of Trusted Advisor checks. 
+-  Use *Amazon CloudWatch* to create alarms on Trusted Advisor metrics for check status changes, resource status changes, and service limit utilization.
+
+
