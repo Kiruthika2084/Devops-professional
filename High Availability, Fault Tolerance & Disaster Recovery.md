@@ -3,6 +3,7 @@
 ---
   * [EB-Deployment-policies](#EB-deployment-policies)
   * [Lambda<->API-gateway](#Lambda-APIgateway)
+  * [Canary-deployment](#Canary-deployment)
 
 
 ### EB-deployment-policies
