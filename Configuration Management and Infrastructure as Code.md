@@ -28,6 +28,7 @@
 - can use run command from console,cli, tool for powershell, sdk at no additional cost
 - Administrators use run command for bootstrap,build deployment pipeline,configure log files, join instances to windows domain etc
 - **parameter store** -store data such as passwords, licence codes, database strings as parameter values
+- **AWS Systems Manager State Manager** is just a secure and scalable configuration management service that automates the process of keeping your Amazon EC2 and hybrid infrastructure in a state that you define
 
 ##### To configure your hybrid servers and VMs for AWS Systems Manager
 ---
