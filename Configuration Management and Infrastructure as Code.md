@@ -37,6 +37,16 @@
 - Use seperate stacks to create related AWS resources
 - ![image](https://user-images.githubusercontent.com/81581601/156093802-0ff739f1-3715-4f2a-929a-46aa16b3539d.png)
 
+##### stack
+---
+- A stack is a collection of AWS resources that you can manage as a single unit.
+- can create, update, or delete a collection of resources by creating, updating, or deleting stacks. 
+- If you no longer require that web application, you can simply delete the stack, and all of its related resources are deleted.
+- If a resource cannot be deleted, any remaining resources are retained until the stack can be successfully deleted.
+- create a nested stack within another stack by using the AWS::CloudFormation::Stack resource.
+- As your infrastructure grows, common patterns can emerge in which you declare the same components in multiple templates. You can separate out these common components and create dedicated templates for them. Then use the resource in your template to reference other templates, creating nested stacks.
+- By setting up both the MinSize and MaxSize parameters of the Auto Scaling group to 1, you can ensure that your EC2 instance can recover again in the event of systems failure with exactly the same parameters defined in the CloudFormation template.This is one of the Auto Scaling strategies which provides high availability with the least possible cost. In this scenario, there is no mention about the scalability of the solution but only its availability.
+
 ##### custom-resource
 ---
 - Include resources that are not cloudformation resource types, using custom-resource. Write custom provisioning logic in templates that AWS cloudformation runs anytime you update,create or delete stacks.This way we can manage all related resources in a single stack.
