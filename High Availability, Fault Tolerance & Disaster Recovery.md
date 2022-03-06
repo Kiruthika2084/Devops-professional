@@ -4,7 +4,7 @@
   * [EB-Deployment-policies](#EB-deployment-policies)
   * [Lambda<->API-gateway](#Lambda-APIgateway)
   * [Canary-deployment](#Canary-deployment)
-  * [cross-region snapshot](#cross-region snapshot)
+  * [cross-region-snapshot](#cross-region snapshot)
 
 
 ### EB-deployment-policies
