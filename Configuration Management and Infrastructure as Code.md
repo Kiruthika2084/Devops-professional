@@ -41,7 +41,8 @@
 - Create a consistent and secure way to remotely manage your hybrid workloads from one location using the same tools or scripts.
 - After you finish configuring your servers and VMs for Systems Manager, your hybrid machines are listed in the Console and described as managed instances.
 - The IDs of your hybrid instances are distinguished from Amazon EC2 instances with the prefix “mi-“. Amazon EC2 instance IDs use the prefix “i-“.
-- Servers and virtual machines (VMs) in a hybrid environment require an IAM role to communicate with the Systems Manager service. The role grants 
+- Servers and virtual machines (VMs) in a hybrid environment require an IAM role to communicate with the Systems Manager service. The role grants
+  AssumeRole trust to the Systems Manager service. You only need to create the service role for a hybrid environment once for each AWS account.
 
 #### Cloud-Formation
 ---
