@@ -4,7 +4,7 @@
   * [EB-Deployment-policies](#EB-deployment-policies)
   * [Lambda<->API-gateway](#Lambda-APIgateway)
   * [Canary-deployment](#Canary-deployment)
-  * [cross-region-snapshot](#cross-region snapshot)
+  * [Cross-region snapshot](#cross-region-snapshot)
 
 
 ### EB-deployment-policies
@@ -48,7 +48,7 @@
  *Use the metric to measure the success of the deployment; this indicates whether the deployment should continue or rollback.
  *Increase the load on the new version until either all users are on the new version or you have fully rolled back.
  
- ### cross-region snapshot
+ ### cross-region-snapshot
  ---
  - When you copy a snapshot to an AWS Region that is different from the source snapshot’s AWS Region, the first copy is a full snapshot copy, even if you copy an incremental snapshot. 
  - A full snapshot copy contains all of the data and metadata required to restore the DB instance.
