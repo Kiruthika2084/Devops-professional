@@ -5,6 +5,7 @@
   * [HealthDashboard](#Healthdashboard)
   * [AWS-TrustedAdvisor](#AWS-TrustedAdvisor)
   * [Code-deploy](#Code-deploy)
+  * [CloudTrail](#CloudTrail)
   
 #### Cloudwatch-LogsSubscription
 ---
@@ -54,3 +55,11 @@
   * Use a Lambda function to pass a notification to a Slack channel whenever deployments fail.
   * Push data about deployments or instances to a Kinesis stream to support comprehensive, real-time status monitoring.
   * Use CloudWatch alarm actions to automatically stop, terminate, reboot, or recover Amazon EC2 instances when a deployment or instance event you specify occurs.
+
+#### CloudTrail
+
+- **CloudTrail log file integrity validation** - To determine whether a log file was modified, deleted, or unchanged after CloudTrail delivered it
+- When you enable log file integrity validation, CloudTrail creates a hash for every log file that it delivers.
+- Every hour, CloudTrail also creates and delivers a file that references the log files for the last hour and contains a hash of each,called a digest file. 
+- The digest files are put into a folder separate from the log files. 
+- Each digest file also contains the digital signature of the previous digest file if one exists. 
