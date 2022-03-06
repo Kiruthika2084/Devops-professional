@@ -29,6 +29,19 @@
 - Administrators use run command for bootstrap,build deployment pipeline,configure log files, join instances to windows domain etc
 - **parameter store** -store data such as passwords, licence codes, database strings as parameter values
 
+##### To configure your hybrid servers and VMs for AWS Systems Manager
+---
+    1. Complete General Systems Manager Setup Steps
+    2. Create an IAM Service Role for a Hybrid Environment
+    3. Install a TLS certificate on On-Premises Servers and VMs
+    4. Create a Managed-Instance Activation for a Hybrid Environment
+    5. Install SSM Agent for a Hybrid Environment (Windows)
+    6. Install SSM Agent for a Hybrid Environment (Linux)
+    7. (Optional) Enable the Advanced-Instances Tier
+- Create a consistent and secure way to remotely manage your hybrid workloads from one location using the same tools or scripts.
+- After you finish configuring your servers and VMs for Systems Manager, your hybrid machines are listed in the Console and described as managed instances.
+- The IDs of your hybrid instances are distinguished from Amazon EC2 instances with the prefix “mi-“. Amazon EC2 instance IDs use the prefix “i-“.
+- Servers and virtual machines (VMs) in a hybrid environment require an IAM role to communicate with the Systems Manager service. The role grants 
 
 #### Cloud-Formation
 ---
