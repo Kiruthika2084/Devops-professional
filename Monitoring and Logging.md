@@ -4,6 +4,7 @@
   * [AWS-Config](#AWS-Config)
   * [HealthDashboard](#Healthdashboard)
   * [AWS-TrustedAdvisor](#AWS-TrustedAdvisor)
+  * [Code-deploy](#Code-deploy)
   
 #### Cloudwatch-LogsSubscription
 ---
@@ -36,4 +37,21 @@
 -  Can use *Amazon CloudWatch Events* to detect and react to changes in the status of Trusted Advisor checks. 
 -  Use *Amazon CloudWatch* to create alarms on Trusted Advisor metrics for check status changes, resource status changes, and service limit utilization.
 
+#### Code-deploy
 
+- use Amazon CloudWatch Events to detect and react to changes in the state of an instance or a deployment (an “event”) in your CodeDeploy operations. 
+- based on rules you create, CloudWatch Events will invoke one or more target actions when a deployment or instance enters the state you specify in a rule. 
+- Depending on the type of state change, you might want to send notifications, capture state information, take corrective action, initiate events, or take other actions.
+- You can select the following types of targets when using CloudWatch Events as part of your CodeDeploy operations:
+
+ *AWS Lambda functions
+ *Kinesis streams
+ *Amazon SQS queues
+ *Built-in targets (CloudWatch alarm actions)
+ *Amazon SNS topics
+ 
+ The following are some use cases:
+
+  * Use a Lambda function to pass a notification to a Slack channel whenever deployments fail.
+  * Push data about deployments or instances to a Kinesis stream to support comprehensive, real-time status monitoring.
+  * Use CloudWatch alarm actions to automatically stop, terminate, reboot, or recover Amazon EC2 instances when a deployment or instance event you specify occurs.
