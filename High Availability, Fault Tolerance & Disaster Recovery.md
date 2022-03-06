@@ -4,6 +4,7 @@
   * [EB-Deployment-policies](#EB-deployment-policies)
   * [Lambda<->API-gateway](#Lambda-APIgateway)
   * [Canary-deployment](#Canary-deployment)
+  * [cross-region snapshot](#cross-region snapshot)
 
 
 ### EB-deployment-policies
@@ -46,5 +47,18 @@
  *Use a dimension on your KPIs to indicate which version is reporting the metrics.
  *Use the metric to measure the success of the deployment; this indicates whether the deployment should continue or rollback.
  *Increase the load on the new version until either all users are on the new version or you have fully rolled back.
+ 
+ ### cross-region snapshot
+ ---
+ - When you copy a snapshot to an AWS Region that is different from the source snapshot’s AWS Region, the first copy is a full snapshot copy, even if you copy an incremental snapshot. 
+ - A full snapshot copy contains all of the data and metadata required to restore the DB instance.
+ - After the first snapshot copy, you can copy incremental snapshots of the same DB instance to the same destination region within the same AWS account.
+ - An incremental snapshot contains only the data that has changed after the most recent snapshot of the same DB instance.
+ - Incremental snapshot copying is faster and results in lower storage costs than full snapshot copying. 
+ - Incremental snapshot copying across AWS Regions is supported for both unencrypted and encrypted snapshots. 
+ - For shared snapshots, copying incremental snapshots is not supported.
+ - For shared snapshots, all of the copies are full snapshots, even within the same region.
+ - Depending on the AWS Regions involved and the amount of data to be copied, a cross-region snapshot copy can take hours to complete. 
+ - when you copy a source snapshot that is a snapshot copy, the copy isn’t incremental because the snapshot copy doesn’t include the required metadata for incremental copies.
 
  
