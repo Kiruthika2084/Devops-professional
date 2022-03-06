@@ -5,6 +5,7 @@
   * [Lambda<->API-gateway](#Lambda-APIgateway)
   * [Canary-deployment](#Canary-deployment)
   * [Cross-region snapshot](#cross-region-snapshot)
+  * [S3-bucket](#S3-bucket)
 
 
 ### EB-deployment-policies
@@ -61,4 +62,15 @@
  - Depending on the AWS Regions involved and the amount of data to be copied, a cross-region snapshot copy can take hours to complete. 
  - when you copy a source snapshot that is a snapshot copy, the copy isn’t incremental because the snapshot copy doesn’t include the required metadata for incremental copies.
 
+ ### S3-bucket
+ ---
+ - By default, Amazon S3 allows both HTTP and HTTPS requests. 
+ - To comply with the s3-bucket-ssl-requests-only rule, confirm that your bucket policies explicitly deny access to HTTP requests. 
+ - Bucket policies that allow HTTPS requests without explicitly denying HTTP requests might not comply with the rule
+ - To determine HTTP or HTTPS requests in a bucket policy, use a condition that checks for the key “aws:SecureTransport”.When this key is true, this means that the request is sent through HTTPS. 
+ - To be sure to comply with the s3-bucket-ssl-requests-only rule, create a bucket policy that explicitly denies access when the request meets the condition “aws:SecureTransport”: “false”. 
+ - you can’t create Amazon S3 buckets in two separate Availability Zones since this is a regional service.
+
+
+ - 
  
