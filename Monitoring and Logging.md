@@ -43,12 +43,11 @@
 - based on rules you create, CloudWatch Events will invoke one or more target actions when a deployment or instance enters the state you specify in a rule. 
 - Depending on the type of state change, you might want to send notifications, capture state information, take corrective action, initiate events, or take other actions.
 - You can select the following types of targets when using CloudWatch Events as part of your CodeDeploy operations:
-
- *AWS Lambda functions
- *Kinesis streams
- *Amazon SQS queues
- *Built-in targets (CloudWatch alarm actions)
- *Amazon SNS topics
+ * AWS Lambda functions
+ * Kinesis streams
+ * Amazon SQS queues
+ * Built-in targets (CloudWatch alarm actions)
+ * Amazon SNS topics
  
  The following are some use cases:
 
