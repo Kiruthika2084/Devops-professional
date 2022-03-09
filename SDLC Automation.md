@@ -90,8 +90,19 @@ The AutoScalingRollingUpdate policy supports the following configuration options
 -  When AWS provider is the provider for an action and this actiontype/provider type are in different region from your pipelne, then called cross-region action.
 -  If you use console to create pipeline, default artifact buckets are configured in the same region
 -  If CloudFormation, CLI, SDK are used, provide artifact bucket for each region you have actions.
--  must create the artifact bucket and encryption key in the same AWS Region as the cross-region action and in the same account as your pipeline.
+-  must create the artifact bucket and encryption key in the same AWS Region as the cross-region
+ action and in the same account as your pipeline.
 -  cannot create cross-region actions for the following action types: source actions, third-party actions, and custom actions. 
+
+#### custom job worker
+
+-  If your release process includes activities that are not included in the default actions, such as an internally developed build process or a test suite, you can create a custom action for that purpose and include it in your pipeline. 
+-  When you create a custom action, you must also create a job worker that will poll CodePipeline for job requests for this custom action, execute the job, and return the status result to CodePipeline.
+-  This job worker can be located on any computer or resource as long as it has access to the public endpoint for CodePipeline. 
+-  To easily manage access and security, consider hosting your job worker on an Amazon EC2 instance.
+
+![image](https://user-images.githubusercontent.com/81581601/157349915-ff94a6cf-5272-45e1-a993-ae87f764bb3f.png)
+
 
 ### Lifecycle-Hook
 
