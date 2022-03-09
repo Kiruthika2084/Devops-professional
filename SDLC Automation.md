@@ -7,6 +7,7 @@
 * [CloudFormation-Lifecycle hooks](#CloudFormation-Lifecyclehooks)
 * [AWS-CodePipeline](#AWS-CodePipeline)
 * [Lifecycle-Hook](#Lifecycle-Hook)
+* [Deployment-Appspec](#Deployment-AppSpec)
 
 
 ### CodeCommit
@@ -105,10 +106,14 @@ The AutoScalingRollingUpdate policy supports the following configuration options
 
 
 ### Lifecycle-Hook
-
+---
 - The EC2 instances in an Auto Scaling group have a path, or lifecycle, that differs from that of other EC2 instances.
 - ![image](https://user-images.githubusercontent.com/81581601/156870225-90dc753b-1b27-4e13-9a2a-b256afdb9a24.png)
 - CloudWatch agent is the most suitable tool to use to collect the logs.
 - You can store and view the metrics in CloudWatch . The default namespace for metrics collected by the CloudWatch agent is CWAgent, although you can specify a     different namespace when you configure the agent.
+ 
+### Deployment-AppSpec
+---
+
 
 
