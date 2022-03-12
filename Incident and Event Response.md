@@ -38,4 +38,9 @@
 - You can configure multiple trails differently so that the trails process and log only the events that you specify. 
 - Example, read only data and management events - seperate trail
 - write only data and management events - seperate trail
-- 
+- Data events are often high-volume activities.
+  Example data events include:
+    Amazon S3 object-level API activity (for example, GetObject, DeleteObject, and PutObject API operations)
+    AWS Lambda function execution activity (the Invoke API)
+- Data events are **disabled by default** when you create a trail. **
+
