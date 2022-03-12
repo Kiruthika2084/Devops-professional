@@ -10,6 +10,7 @@
 * [Appspec-hooks](#Appspec-hooks)
 * [codeDeploy-deploymentstrategies](#codeDeploy-deploymentstrategies)
 * [ASG-ScheduledAction](#ASG-ScheduledAction)
+* [App-DiscoveryService](#App-DiscoveryService)
 
  
 #### cloudwatch-metrics<->CodeDeploy deployment group
@@ -127,4 +128,10 @@
  - To configure your Auto Scaling group to scale based on a schedule, you create a scheduled action.
  - At the specified time, Amazon EC2 Auto Scaling updates the group with the values for minimum, maximum, and desired size specified by the scaling action.
  - can create scheduled actions for scaling one time only or for scaling on a recurring schedule.
+ 
+#### App-DiscoveryService
+---
+
+ - AWS Application Discovery Service helps you plan your migration to the AWS cloud by collecting usage and configuration data about your on-premises servers. 
+ 
  
