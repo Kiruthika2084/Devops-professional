@@ -3,6 +3,7 @@
 ---
   * [CloudWatch-events](#CloudWatch-events)
   * [VPC](#VPC)
+  * [S3-Events](#S3-Events)
 
 ### CloudWatch-events
 ---
