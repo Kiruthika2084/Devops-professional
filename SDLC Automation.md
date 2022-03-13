@@ -122,4 +122,9 @@ The AutoScalingRollingUpdate policy supports the following configuration options
 
 #### ECS-Agent
 
-
+- Running service can be updated - number of tasks, task definition, change platfoem version fargate, scale up/dowm
+- For updated docker image, create new task definition with that image and deploy in your service.
+- If updated docker image uses same tag, keep current settings of your service and force new deployment.
+- The new tasks launched by the deployment pull the current image/tag combination from your repository when they start.
+- he service scheduler uses the minimum healthy percent and maximum percent parameters (in the deployment configuration for the service) to determine the deployment strategy.
+- 
