@@ -7,7 +7,7 @@
 * [CloudFormation-Lifecycle hooks](#CloudFormation-Lifecyclehooks)
 * [AWS-CodePipeline](#AWS-CodePipeline)
 * [Lifecycle-Hook](#Lifecycle-Hook)
-* [ECSDeployment-Appspec](#ECSDeployment-AppSpec)
+* [ECS](#ECS)
 
 
 ### CodeCommit
@@ -112,12 +112,14 @@ The AutoScalingRollingUpdate policy supports the following configuration options
 - CloudWatch agent is the most suitable tool to use to collect the logs.
 - You can store and view the metrics in CloudWatch . The default namespace for metrics collected by the CloudWatch agent is CWAgent, although you can specify a     different namespace when you configure the agent.
  
-### ECSDeployment-AppSpec
+### ECS
 ---
+#### Deployment-AppSpec
 - Hooks in Appspec depends on the compute platform for your deployment
 - You can use a Lambda function to validate part of the deployment of an updated Amazon ECS application.
 - Some lifecycle events are hooks that only execute Lambda functions specified in the AppSpec file.
 - If rollbacks are configured, you can configure a CloudWatch alarm that triggers a rollback when the validation test in your Lambda function fails.x`
 
+#### ECS-Agent
 
 
