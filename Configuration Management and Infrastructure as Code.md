@@ -130,8 +130,17 @@
  - can create scheduled actions for scaling one time only or for scaling on a recurring schedule.
  
 #### App-DiscoveryService
----
-
- - AWS Application Discovery Service helps you plan your migration to the AWS cloud by collecting usage and configuration data about your on-premises servers. 
+ ---
  
+ - collects config and usage data from on-premises servers.
+ - Integrated with AWS Migration Hub which simplifies migration tracking.
+ - After discovery, can view the dicovered servers, group into Applications, and then track migration status of each app from Migration Hub console.
+ - Using Application Discovery Service APIs,can export system performance and data for your discovered servers.
+ - can input this data into your cost model to compute the cost of running those servers in AWS. 
+ - Additionally, you can export the network connections and process data to understand the network connections that exist between servers. 
+ 
+ ##### Agentlesss discovery
+  - Deploy OVA file(AWS agentless discovery connector) thru VMware vcenter.( collect info only abt VMware virtual machines)
+ ##### Agent-based discovery
+ - Install AWS Application Discovery Agent on each of your VMs and physical servers. 
  
