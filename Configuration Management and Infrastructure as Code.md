@@ -11,6 +11,7 @@
 * [codeDeploy-deploymentstrategies](#codeDeploy-deploymentstrategies)
 * [ASG-ScheduledAction](#ASG-ScheduledAction)
 * [App-DiscoveryService](#App-DiscoveryService)
+* [AWS-SecretsManager](#AWS-SecretsManager)
 
  
 #### cloudwatch-metrics<->CodeDeploy deployment group
@@ -143,4 +144,9 @@
   - Deploy OVA file(AWS agentless discovery connector) thru VMware vcenter.( collect info only abt VMware virtual machines)
  ##### Agent-based discovery
  - Install AWS Application Discovery Agent on each of your VMs and physical servers. 
+ 
+#### AWS-SecretsManager 
+ ---
+ 
+ - Secrets Manager enables you to replace hardcoded credentials in your code (including passwords), with an API call to Secrets Manager to retrieve the secret programmatically.
  
