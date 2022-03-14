@@ -12,6 +12,7 @@
 * [ASG-ScheduledAction](#ASG-ScheduledAction)
 * [App-DiscoveryService](#App-DiscoveryService)
 * [AWS-SecretsManager](#AWS-SecretsManager)
+* [Route53](#Route53)
 
  
 #### cloudwatch-metrics<->CodeDeploy deployment group
@@ -143,10 +144,17 @@
  ##### Agentlesss discovery
   - Deploy OVA file(AWS agentless discovery connector) thru VMware vcenter.( collect info only abt VMware virtual machines)
  ##### Agent-based discovery
- - Install AWS Application Discovery Agent on each of your VMs and physical servers. 
+  - Install AWS Application Discovery Agent on each of your VMs and physical servers. 
  
 #### AWS-SecretsManager 
  ---
- 
  - Secrets Manager enables you to replace hardcoded credentials in your code (including passwords), with an API call to Secrets Manager to retrieve the secret programmatically.
+ 
+ #### Route53
+ ---
+ - Use an active-passive failover configuration when you want a primary resource or group of resources to be available the majority of the time and you want a secondary resource or group of resources to be on standby in case all the primary resources become unavailable.
+ - When responding to queries, Route 53 includes only the healthy primary resources. If all the primary resources are unhealthy, Route 53 begins to include only the healthy secondary resources in response to DNS queries.
+ - When Healthcheck configured, At regular intervals that you specify, Route 53 submits automated requests over the Internet to your application, server, or other resources to verify that it’s reachable, available, and functional.
+ - For a health check to succeed, your router and firewall rules must allow inbound traffic from the IP addresses that the Route 53 health checkers use.
+ - Weighted routing simply lets you associate multiple resources with a single domain name (pasigcity.com) or subdomain name (blog.pasigcity.com) and choose how much traffic is routed to each resource.
  
