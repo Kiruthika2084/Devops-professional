@@ -105,6 +105,12 @@ The AutoScalingRollingUpdate policy supports the following configuration options
 
 ![image](https://user-images.githubusercontent.com/81581601/157349915-ff94a6cf-5272-45e1-a993-ae87f764bb3f.png)
 
+#### Monitoring
+
+- Monitoring is an important part of maintaining the reliability, availability, and performance of AWS CodePipeline.
+- Amazon CloudWatch Events — Use Amazon CloudWatch Events to detect and react to pipeline execution state changes (for example, send an Amazon SNS notification or invoke a Lambda function).
+- AWS CloudTrail — Use CloudTrail to capture API calls made by or on behalf of CodePipeline in your AWS account and deliver the log files to an Amazon S3 bucket. You can choose to have CloudWatch publish Amazon SNS notifications when new log files are delivered so you can take quick action.
+- Console and CLI — You can use the CodePipeline console and CLI to view details about the status of a pipeline or a particular pipeline execution.
 
 ### Lifecycle-Hook
 ---
