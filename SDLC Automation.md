@@ -8,6 +8,7 @@
 * [AWS-CodePipeline](#AWS-CodePipeline)
 * [Lifecycle-Hook](#Lifecycle-Hook)
 * [ECS](#ECS)
+* [SSM](#SSM)
 
 
 ### CodeCommit
@@ -127,4 +128,18 @@ The AutoScalingRollingUpdate policy supports the following configuration options
 - If updated docker image uses same tag, keep current settings of your service and force new deployment.
 - The new tasks launched by the deployment pull the current image/tag combination from your repository when they start.
 - he service scheduler uses the minimum healthy percent and maximum percent parameters (in the deployment configuration for the service) to determine the deployment strategy.
-- 
+
+### SSM
+---
+- Systems Manager Automation simplifies common maintenance and deployment tasks of Amazon EC2 instances and other AWS resources.
+- Automation enables you to do the following.
+    – Build Automation workflows to configure and manage instances and AWS resources.
+    – Create custom workflows or use pre-defined workflows maintained by AWS.
+    – Receive notifications about Automation tasks and workflows by using Amazon CloudWatch Events.
+    – Monitor Automation progress and execution details by using the Amazon EC2 or the AWS Systems Manager console.
+- Automation offers one-click automations for simplifying complex tasks such as creating golden Amazon Machines Images (AMIs), and recovering unreachable EC2 instances.
+- Use the AWS-UpdateLinuxAmi and AWS-UpdateWindowsAmi documents to create golden AMIs from a source AMI. You can run custom scripts before and after updates are applied. You can also include or exclude specific packages from being installed.
+-  – Use the AWSSupport-ExecuteEC2Rescue document to recover impaired instances.
+
+
+
