@@ -10,9 +10,10 @@
 * [Appspec-hooks](#Appspec-hooks)
 * [codeDeploy-deploymentstrategies](#codeDeploy-deploymentstrategies)
 * [ASG-ScheduledAction](#ASG-ScheduledAction)
-* [App-DiscoveryService](#App-DiscoveryService)
+* [App-DiscoveryService](#App-DaiscoveryService)
 * [AWS-SecretsManager](#AWS-SecretsManager)
-* [Route53](#Route53)
+* [Route53](#Route53) 
+* [S3-DeletionPolicy](=S3-DeletionPlicy)
 
  
 #### cloudwatch-metrics<->CodeDeploy deployment group
@@ -157,4 +158,16 @@
  - When Healthcheck configured, At regular intervals that you specify, Route 53 submits automated requests over the Internet to your application, server, or other resources to verify that it’s reachable, available, and functional.
  - For a health check to succeed, your router and firewall rules must allow inbound traffic from the IP addresses that the Route 53 health checkers use.
  - Weighted routing simply lets you associate multiple resources with a single domain name (pasigcity.com) or subdomain name (blog.pasigcity.com) and choose how much traffic is routed to each resource.
+ 
+ #### S3-DeletionPolicy
+ ---
+ - Cloudformation calls AWS Lambda API to invoke the function and pass the request data to the function.
+ - Lambda functions in combination with AWS CloudFormation enable a wide range of scenarios, such as dynamically looking up AMI IDs during stack creation
+ - In CloudFormation, you can only delete empty buckets.
+ 
+ 
+ 
+ 
+ 
+ 
  
