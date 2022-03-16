@@ -14,6 +14,7 @@
 * [AWS-SecretsManager](#AWS-SecretsManager)
 * [Route53](#Route53) 
 * [S3-DeletionPolicy](=S3-DeletionPlicy)
+* [CodePipeline-runorder](#CodePipeline-runorder)
 
  
 #### cloudwatch-metrics<->CodeDeploy deployment group
@@ -165,7 +166,10 @@
  - Lambda functions in combination with AWS CloudFormation enable a wide range of scenarios, such as dynamically looking up AMI IDs during stack creation
  - In CloudFormation, you can only delete empty buckets.
  
- 
+ #### CodePipeline-runorder
+ ---
+ - In AWS CodePipeline, an action is part of the sequence in a stage of a pipeline. It is a task performed on the artifact in that stage.
+ - Pipeline actions occur in a specified order, in sequence or in parallel, as determined in the configuration of the stage.
  
  
  
