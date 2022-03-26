@@ -26,6 +26,7 @@
 - **Can associate upto ten cloudwatch alarms with a codedeploy deployment group**
 - If any of the alarms are activated, the deployment stops and the status is updated to stopped. 
   To use this option, grant Cloudwatch permissions to your codedeploy service role.
+- DeploymentConfig resource that defines how many instances must remain healthy during an AWS CodeDeploy deployment
 
 #### AWS-Systems-manager
 ---
